@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寝室主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            background: url('背景.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: url('2.jpg') no-repeat center center fixed; /* 设置背景图片 */
+            background-size: cover; /* 背景图片自适应容器大小 */
+            color: white;
+            padding: 50px 20px; /* 给header添加内边距，确保文字不贴边 */
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 15px 20px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav ul li a:hover {
+            background-color: #e8491d;
+        }
+
+        section.main {
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1; 
+        }
+
+        
+        .roommate {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7);  
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+            text-align: center;
+            border-radius: 15px; 
+            border: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .roommate img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我们的寝室主页</h1>
+        <p>这是我们四人的共同主页，点击下方链接访问每个人的个人网页。</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="https://mingzi-zz.github.io/wjb611/wjb611/index.html">王俊博</a></li>
+            <li><a href="https://zemengzero.github.io/HUST/lyy602/index.html">刘亦奕</a></li>
+            <li><a href="https://mbitious33.github.io/cqj592/cqj592/index.html">陈启俊</a></li>
+            <li><a href="https://wangyizhou767.github.io/wangyizhou/wyz608/index.html/%E6%9E%97%E4%B8%B9%E9%A6%96%E9%A1%B5.html">汪亦周</a></li>
+			<li><a href="roommate4.html">前往班级主页 GO</a></li>
+        </ul>
+    </nav>
+
+    <section class="main">
+        <p style="font-size: 35px; color:white">我们的寝室成员</p>
+        <div class="roommate">
+            <img src="wjb.jpg" alt="王俊博">
+            <h3>王俊博&nbsp;</h3>
+            <p><a href="https://mingzi-zz.github.io/wjb611/wjb611/index.html" style="color:#344968">点击查看个人页面</a></p>
+        </div>
+        <div class="roommate">
+            <img src="lyy.jpg" alt="刘亦奕">
+            <h3>刘亦奕</h3>
+            <p><a href="https://zemengzero.github.io/HUST/lyy602/index.html" style="color:#344968">点击查看个人页面</a></p>
+        </div>
+        <div class="roommate">
+            <img src="cqj.jpg" alt="陈启俊">
+            <h3>陈启俊</h3>
+            <p><a href="https://mbitious33.github.io/cqj592/cqj592/index.html" style="color:#344968">点击查看个人页面</a></p>
+        </div>
+        <div class="roommate">
+            <img src="wyz.jpg" alt="汪亦周">
+            <h3>汪亦周</h3>
+            <p><a href="https://wangyizhou767.github.io/wangyizhou/wyz608/index.html/%E6%9E%97%E4%B8%B9%E9%A6%96%E9%A1%B5.html" style="color:#344968">点击查看个人页面</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>寝室主页 &copy; 2024</p>
+    </footer>
+</body>
+</html>
